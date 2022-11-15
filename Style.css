@@ -510,3 +510,96 @@ Background Colours:
   color: #0065CF;
   pointer-events: none;
 }
+
+.resourcegrid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 75px;
+  grid-row-gap: 100px;
+}
+
+.spc{
+  padding: 50px;
+}
+
+.resourcegrid h1{
+  text-align: center;
+}
+
+.resourcegrid p{
+  text-align: center;
+  opacity: 70%;
+}
+
+.chatR{
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.chatR i{
+  font-size: 30px;
+  background-color: #EEEEFB;
+  color: #5454D4;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.comm{
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.comm i{
+  font-size: 30px;
+  background-color: #FDECEB;
+  color: #F04037;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.bubleshot{
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.bubleshot i{
+  font-size: 30px;
+  background-color: #E3F5F0;
+  color: #1FAE8C;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.publish{
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.publish i{
+  font-size: 30px;
+  background-color: #E3F5F0;
+  color: #1FAE8C;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.record{
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.record i{
+  font-size: 30px;
+  background-color: #EEEEFB;
+  color: #5454D4;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.update{
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.update i{
+  font-size: 30px;
+  background-color: #FDECEB;
+  color: #F04037;
+  padding: 20px;
+  border-radius: 50%;
+}
