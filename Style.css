@@ -608,7 +608,7 @@ Background Colours:
 #footer {
   position: relative;
   background-color: #652CD0;
-  min-height: 45vh;
+  min-height: 30vh;
 }
 
 .custom-shape-divider-top-1668662447 {
@@ -634,46 +634,59 @@ Background Colours:
 
 .footergrid {
   display: grid;
-grid-template-columns: repeat(9, 1fr);
-grid-template-rows: repeat(4, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   color: white;
 }
 
-.footerhead{
+.footerhead {
   grid-area: 2 / 2 / 3 / 4;
   color: white;
   font-size: 1.5rem;
 }
 
-.googlePlay{
+.googlePlay {
   grid-area: 3 / 2 / 4 / 3;
   place-items: center;
 }
 
-.appStore{
+.appStore {
   grid-area: 3 / 3 / 4 / 4;
-  margin-top: 25%;
+  margin-top: 24.5%;
 }
 
-.footp{
+.footp {
   grid-area: 4 / 2 / 5 / 5;
 }
 
-.legal{
+.legal {
   grid-area: 2 / 7 / 5 / 8;
 }
 
-.contact{
+.contact {
   grid-area: 2 / 8 / 4 / 9;
 }
 
-.legal a, .contact a{
+.legal a,
+.contact a {
   text-decoration: none;
   color: white;
 }
 
-.contacticons{
+.contacticons {
   grid-area: 4 / 8 / 5 / 9;
+}
+
+.contacticons i {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: right;
+  margin-top: 8.5%;
+}
+
+.insta {
+  margin-left: 7%;
 }
