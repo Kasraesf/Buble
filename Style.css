@@ -231,7 +231,7 @@ header {
   grid-row-gap: 25px;
 }
 
-.interestgrid a{
+.interestgrid a {
   text-decoration: none;
 }
 
@@ -254,7 +254,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst1 a{
+.intrst1 a {
   color: #0065CF;
   pointer-events: none;
 }
@@ -263,12 +263,12 @@ Background Colours:
   grid-area: 2 / 3 / 3 / 4;
   padding: 9px 25px;
   text-align: center;
-  background-color: #FFEDF0 ;
+  background-color: #FFEDF0;
   border: none;
   border-radius: 50px;
 }
 
-.intrst2 a{
+.intrst2 a {
   color: #FF415D;
   pointer-events: none;
 }
@@ -282,7 +282,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst3 a{
+.intrst3 a {
   pointer-events: none;
   color: #0065CF;
 }
@@ -291,12 +291,12 @@ Background Colours:
   grid-area: 2 / 5 / 3 / 6;
   padding: 9px 25px;
   text-align: center;
-  background-color: #FFEDF0 ;
+  background-color: #FFEDF0;
   border: none;
   border-radius: 50px;
 }
 
-.intrst4 a{
+.intrst4 a {
   color: #FF415D;
   pointer-events: none;
 }
@@ -310,7 +310,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst5 a{
+.intrst5 a {
   color: #0065CF;
   pointer-events: none;
 }
@@ -319,12 +319,12 @@ Background Colours:
   grid-area: 2 / 7 / 3 / 8;
   padding: 9px 25px;
   text-align: center;
-  background-color: #FFEDF0 ;
+  background-color: #FFEDF0;
   border: none;
   border-radius: 50px;
 }
 
-.intrst6 a{
+.intrst6 a {
   color: #FF415D;
   pointer-events: none;
 }
@@ -338,7 +338,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst7 a{
+.intrst7 a {
   color: #0065CF;
   pointer-events: none;
 }
@@ -352,7 +352,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst8 a{
+.intrst8 a {
   color: #1FAE8C;
   pointer-events: none;
 }
@@ -366,7 +366,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst9 a{
+.intrst9 a {
   color: #0065CF;
   pointer-events: none;
 }
@@ -380,7 +380,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst10 a{
+.intrst10 a {
   color: #1FAE8C;
   pointer-events: none;
 }
@@ -394,7 +394,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst11 a{
+.intrst11 a {
   color: #0065CF;
   pointer-events: none;
 }
@@ -408,7 +408,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst12 a{
+.intrst12 a {
   color: #1FAE8C;
   pointer-events: none;
 }
@@ -422,7 +422,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst13 a{
+.intrst13 a {
   color: #0065CF;
   pointer-events: none;
 }
@@ -431,12 +431,12 @@ Background Colours:
   grid-area: 4 / 3 / 5 / 4;
   padding: 9px 25px;
   text-align: center;
-  background-color: #FFEDF0 ;
+  background-color: #FFEDF0;
   border: none;
   border-radius: 50px;
 }
 
-.intrst14 a{
+.intrst14 a {
   color: #FF415D;
   pointer-events: none;
 }
@@ -450,7 +450,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst15 a{
+.intrst15 a {
   color: #0065CF;
   pointer-events: none;
 }
@@ -464,7 +464,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst16 a{
+.intrst16 a {
   color: #1FAE8C;
   pointer-events: none;
 }
@@ -478,7 +478,7 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst17 a{
+.intrst17 a {
   color: #0065CF;
   pointer-events: none;
 }
@@ -487,12 +487,12 @@ Background Colours:
   grid-area: 4 / 7 / 5 / 8;
   padding: 9px 25px;
   text-align: center;
-  background-color: #FFEDF0 ;
+  background-color: #FFEDF0;
   border: none;
   border-radius: 50px;
 }
 
-.intrst18 a{
+.intrst18 a {
   color: #FF415D;
   pointer-events: none;
 }
@@ -506,37 +506,38 @@ Background Colours:
   border-radius: 50px;
 }
 
-.intrst19 a{
+.intrst19 a {
   color: #0065CF;
   pointer-events: none;
 }
 
-.resourcegrid{
+.resourcegrid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 75px;
   grid-row-gap: 100px;
+  margin-bottom: 50px;
 }
 
-.spc{
+.spc {
   padding: 50px;
 }
 
-.resourcegrid h1{
+.resourcegrid h1 {
   text-align: center;
 }
 
-.resourcegrid p{
+.resourcegrid p {
   text-align: center;
   opacity: 70%;
 }
 
-.chatR{
+.chatR {
   grid-area: 1 / 2 / 2 / 3;
 }
 
-.chatR i{
+.chatR i {
   font-size: 30px;
   background-color: #EEEEFB;
   color: #5454D4;
@@ -544,11 +545,11 @@ Background Colours:
   border-radius: 50%;
 }
 
-.comm{
+.comm {
   grid-area: 1 / 3 / 2 / 4;
 }
 
-.comm i{
+.comm i {
   font-size: 30px;
   background-color: #FDECEB;
   color: #F04037;
@@ -556,11 +557,11 @@ Background Colours:
   border-radius: 50%;
 }
 
-.bubleshot{
+.bubleshot {
   grid-area: 1 / 4 / 2 / 5;
 }
 
-.bubleshot i{
+.bubleshot i {
   font-size: 30px;
   background-color: #E3F5F0;
   color: #1FAE8C;
@@ -568,11 +569,11 @@ Background Colours:
   border-radius: 50%;
 }
 
-.publish{
+.publish {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.publish i{
+.publish i {
   font-size: 30px;
   background-color: #E3F5F0;
   color: #1FAE8C;
@@ -580,11 +581,11 @@ Background Colours:
   border-radius: 50%;
 }
 
-.record{
+.record {
   grid-area: 2 / 3 / 3 / 4;
 }
 
-.record i{
+.record i {
   font-size: 30px;
   background-color: #EEEEFB;
   color: #5454D4;
@@ -592,14 +593,87 @@ Background Colours:
   border-radius: 50%;
 }
 
-.update{
+.update {
   grid-area: 2 / 4 / 3 / 5;
 }
 
-.update i{
+.update i {
   font-size: 30px;
   background-color: #FDECEB;
   color: #F04037;
   padding: 20px;
   border-radius: 50%;
+}
+
+#footer {
+  position: relative;
+  background-color: #652CD0;
+  min-height: 45vh;
+}
+
+.custom-shape-divider-top-1668662447 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1668662447 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1668662447 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.footergrid {
+  display: grid;
+grid-template-columns: repeat(9, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+  color: white;
+}
+
+.footerhead{
+  grid-area: 2 / 2 / 3 / 4;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.googlePlay{
+  grid-area: 3 / 2 / 4 / 3;
+  place-items: center;
+}
+
+.appStore{
+  grid-area: 3 / 3 / 4 / 4;
+  margin-top: 25%;
+}
+
+.footp{
+  grid-area: 4 / 2 / 5 / 5;
+}
+
+.legal{
+  grid-area: 2 / 7 / 5 / 8;
+}
+
+.contact{
+  grid-area: 2 / 8 / 4 / 9;
+}
+
+.legal a, .contact a{
+  text-decoration: none;
+  color: white;
+}
+
+.contacticons{
+  grid-area: 4 / 8 / 5 / 9;
 }
