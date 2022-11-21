@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.tC, .license, .acc, .fee, .use, .agreement, .breaches, .children{
+  text-align: justify;
+  margin: 0% 10%;
+}
+
+#footer {
+  position: relative;
+  background-color: #652CD0;
+  min-height: 30vh;
+}
+
+.custom-shape-divider-top-1668662447 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1668662447 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1668662447 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.footergrid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  color: white;
+}
+
+.footerhead {
+  grid-area: 2 / 2 / 3 / 4;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.googlePlay {
+  grid-area: 3 / 2 / 4 / 3;
+  place-items: center;
+}
+
+.appStore {
+  grid-area: 3 / 3 / 4 / 4;
+  margin-top: 24.5%;
+}
+
+.footp {
+  grid-area: 4 / 2 / 5 / 5;
+}
+
+.legal {
+  grid-area: 2 / 7 / 5 / 8;
+}
+
+.contact {
+  grid-area: 2 / 8 / 4 / 9;
+}
+
+.legal a,
+.contact a {
+  text-decoration: none;
+  color: white;
+}
+
+.contacticons {
+  grid-area: 4 / 8 / 5 / 9;
+}
+
+.contacticons i {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: right;
+  margin-top: 8.5%;
+}
+
+.insta {
+  margin-left: 7%;
+}
+
+.website{
+    color: black;
+    text-decoration: underline;
+}
