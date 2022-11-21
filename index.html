@@ -18,9 +18,19 @@
         <div class="nav">
             <header>
                 <a class="logo" href="#"><img src="./Assets/Logo.svg" alt="logo"></a>
-                <a class="cta" href="#">Download Now</a>
+                <a class="cta" href="#" data-modal-target="#modal">Download Now</a>
             </header>
         </div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title"></div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="./Assets/comingSoon.svg" alt="">
+            </div>
+        </div>
+        <div id="overlay"></div>
         <div class="grid">
             <div class="headerillustration">
                 <img src="./Assets/Header Iluustration.svg" alt="">
@@ -154,6 +164,35 @@
             </div>
         </div>
     </section>
+    <section id="inside">
+        <div class="txt">
+            <h1>What happens inside the community?</h1>
+            <p>Buble Community is simply a group of awesome, good-hearted people from different regions.</p>
+        </div>
+        <div class="insidegrid">
+            <div class="insideimg">
+                <img src="./Assets/inside.svg" alt="">
+            </div>
+            <div class="insideBuild">
+                <h1>Build</h1>
+                <p class="opc">Our platform allows people to form communities, share their stories, and be encouraged in
+                    their daily
+                    activities to bridge the social divide.</p>
+            </div>
+            <div class="grow">
+                <h1>Grow</h1>
+                <p class="opc">This community will help your personal and professional lives go and in and influence
+                    each other's
+                    growth, allowing you to achieve your vision.</p>
+            </div>
+            <div class="sync">
+                <h1>Sync</h1>
+                <p class="opc">Everyone in this community interacts with one another every day and has enjoyable
+                    conversations. To
+                    put it simply, anyone can find a community of best buddies.</p>
+            </div>
+        </div>
+    </section>
     <section id="resources">
         <div class="txt spc">
             <h1>The resources we provide for you</h1>
@@ -236,6 +275,44 @@
             </svg>
         </div>
     </section>
+    <script>
+        const openModalButtons = document.querySelectorAll('[data-modal-target]')
+        const closeModalButtons = document.querySelectorAll('[data-close-button]')
+        const overlay = document.getElementById('overlay')
+
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = document.querySelector(button.dataset.modalTarget)
+                openModal(modal)
+            })
+        })
+
+        overlay.addEventListener('click', () => {
+            const modals = document.querySelectorAll('.modal.active')
+            modals.forEach(modal => {
+                closeModal(modal)
+            })
+        })
+
+        closeModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = button.closest('.modal')
+                closeModal(modal)
+            })
+        })
+
+        function openModal(modal) {
+            if (modal == null) return
+            modal.classList.add('active')
+            overlay.classList.add('active')
+        }
+
+        function closeModal(modal) {
+            if (modal == null) return
+            modal.classList.remove('active')
+            overlay.classList.remove('active')
+        }
+    </script>
 </body>
 
 </html>
