@@ -660,34 +660,35 @@ Background Colours:
   margin-left: 7%;
 }
 
-.insidegrid{
-margin-top: 100px;
+.insidegrid {
+  margin-top: 100px;
   display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
-.insideimg{
+.insideimg {
   grid-area: 1 / 2 / 4 / 5;
+
 }
 
-.insideBuild{
+.insideBuild {
   grid-area: 1 / 2 / 2 / 3;
 }
 
-.grow{
+.grow {
   margin-top: 25px;
   grid-area: 2 / 4 / 3 / 5;
 }
 
-.sync{
+.sync {
   margin-top: 100px;
   grid-area: 3 / 2 / 4 / 3;
 }
 
-.opc{
+.opc {
   opacity: 70%;
 }
 
@@ -718,7 +719,7 @@ grid-row-gap: 0px;
   border: none;
   outline: none;
   background: none;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -741,4 +742,80 @@ grid-row-gap: 0px;
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.buildimg {
+  visibility: hidden;
+}
+
+.growimg {
+  visibility: hidden;
+}
+
+.syncimg {
+  visibility: hidden;
+}
+
+
+@media screen and (max-width: 1285px) {
+  .insideimg {
+    visibility: hidden;
+  }
+
+  .insidegrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 0.25fr 0.3fr 0.25fr 0.3fr 0.25fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .buildimg {
+    grid-area: 1 / 2 / 3 / 3;
+    visibility: visible;
+  }
+
+  .buildimg img{
+    width: 100%;
+  }
+
+  .insideBuild {
+    font-size: 1.25rem;
+    text-align: center;
+    grid-area: 2 / 2 / 4 / 3;
+    margin-top: 0px;
+  }
+
+  .growimg {
+    grid-area: 3 / 2 / 5 / 3;
+    visibility: visible;
+  }
+
+  .growimg img{
+    width: 100%;
+  }
+
+  .grow {
+    margin: 75px 0px;
+    font-size: 1.25rem;
+    text-align: center;
+    grid-area: 4 / 2 / 6 / 3;
+  }
+
+  .syncimg {
+    margin-top: 75px;
+    grid-area: 5 / 2 / 7 / 3;
+    visibility: visible;
+  }
+
+  .syncimg img{
+    width: 100%;
+  }
+
+  .sync {
+    font-size: 1.25rem;
+    text-align: center;
+    grid-area: 6 / 2 / 8 / 3;
+    margin-top: 0px;
+  }
 }

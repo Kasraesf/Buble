@@ -53,7 +53,7 @@ header {
 .footergrid {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 75px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   color: white;
@@ -68,11 +68,12 @@ header {
 .googlePlay {
   grid-area: 3 / 2 / 4 / 3;
   place-items: center;
+  margin-top: 50px;
 }
 
 .appStore {
   grid-area: 3 / 3 / 4 / 4;
-  margin-top: 24.5%;
+  margin-top: 50px;
 }
 
 .footp {
