@@ -618,11 +618,12 @@ Background Colours:
 .googlePlay {
   grid-area: 3 / 2 / 4 / 3;
   place-items: center;
+  margin-top: 50px;
 }
 
 .appStore {
   grid-area: 3 / 3 / 4 / 4;
-  margin-top: 24.5%;
+  margin-top: 50px;
 }
 
 .footp {
