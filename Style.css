@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+:root{
+  --fs-head: calc(1.5vw + 7px);
+  --fs-p: calc(1vw + 6px);
+  --fs-icon: calc(2vw + 10px);
+}
+
+
 html,
 body {
   margin: 0;
@@ -103,7 +110,7 @@ header {
 }
 
 .headertxt {
-  font-size: 1.5vw;
+  font-size: var(--fs-head);
   color: white;
   grid-area: 1 / 2 / 2 / 5;
 }
@@ -112,7 +119,7 @@ header {
   color: white;
   opacity: 70%;
   grid-area: 2 / 2 / 3 / 6;
-  font-size: 1.25vw;
+  font-size: var(--fs-p);
 }
 
 .yellow {
@@ -139,11 +146,11 @@ header {
 .txt h1 {
   color: #652cd0;
   text-align: center;
-  font-size: 2vw;
+  font-size: var(--fs-head);
 }
 
 .txt p {
-  font-size: 1.25vw;
+  font-size: var(--fs-p);
   opacity: 80%;
   text-align: center;
 }
@@ -157,16 +164,16 @@ header {
 }
 
 .content p {
-  font-size: 1vw;
+  font-size: var(--fs-p);
   opacity: 80%;
 }
 
-.content i{
-  font-size: 1.75vw;
+.content i {
+  font-size: var(--fs-icon);
 }
 
-.content h1{
-  font-size: 1.5vw;
+.content h1 {
+  font-size: var(--fs-head);
 }
 
 .build {
@@ -227,7 +234,7 @@ header {
 
 .interestgrid a {
   text-decoration: none;
-  font-size: 1vw;
+  font-size: var(--fs-p);
 }
 
 /* fonts Colours:
@@ -515,8 +522,8 @@ Background Colours:
   margin-bottom: 50px;
 }
 
-.resourcegrid i{
-  font-size: 1.75vw;
+.resourcegrid i {
+  font-size: var(--fs-icon);
 }
 
 .spc {
@@ -524,12 +531,12 @@ Background Colours:
 }
 
 .resourcegrid h1 {
-  font-size: 1.5vw;
+  font-size: var(--fs-head);
   text-align: center;
 }
 
 .resourcegrid p {
-  font-size: 1vw;
+  font-size: var(--fs-p);
   text-align: center;
   opacity: 70%;
 }
@@ -630,7 +637,7 @@ Background Colours:
 .footergrid {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 75px;
+  grid-template-rows: 1fr 1fr 1fr 0.25fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   color: white;
@@ -639,7 +646,7 @@ Background Colours:
 .footerhead {
   grid-area: 2 / 2 / 3 / 4;
   color: white;
-  font-size: 1.5vw;
+  font-size: var(--fs-head);
 }
 
 .googlePlay {
@@ -654,19 +661,23 @@ Background Colours:
 }
 
 .footp {
+  font-size: var(--fs-p);
   grid-area: 4 / 2 / 5 / 5;
 }
 
 .legal {
+  font-size: var(--fs-head);
   grid-area: 2 / 7 / 5 / 8;
 }
 
 .contact {
+  font-size: var(--fs-head);
   grid-area: 2 / 8 / 4 / 9;
 }
 
 .legal a,
 .contact a {
+  font-size: var(--fs-p);
   text-decoration: none;
   color: white;
 }
@@ -678,7 +689,7 @@ Background Colours:
 .contacticons i {
   color: white;
   text-decoration: none;
-  font-size: 1.75vw;
+  font-size: var(--fs-p);
   text-align: right;
   margin-top: 8.5%;
 }
@@ -696,12 +707,12 @@ Background Colours:
   grid-row-gap: 0px;
 }
 
-.insidegrid h1{
-  font-size: 1.5vw;
+.insidegrid h1 {
+  font-size: var(--fs-head);
 }
 
-.insidegrid p{
-  font-size: 1vw;
+.insidegrid p {
+  font-size: var(--fs-p);
 }
 
 .insideimg {
@@ -754,7 +765,7 @@ Background Colours:
   border: none;
   outline: none;
   background: none;
-  font-size: 2rem;
+  font-size: var(--fs-head);
   font-weight: bold;
 }
 
@@ -864,25 +875,130 @@ Background Colours:
   .headerillustration {
     grid-area: 4 / 2 / 5 / 4;
   }
-  
+
   .headerillustration img {
     width: 100%;
   }
-  
+
   .headertxt {
     text-align: center;
     color: white;
     grid-area: 1 / 2 / 2 / 4;
   }
-  
+
   .headerp {
     text-align: center;
     color: white;
     opacity: 70%;
     grid-area: 2 / 2 / 3 / 4;
   }
-  
+
   .learnbtn {
     grid-area: 3 / 2 / 4 / 4;
   }
+
+  .footergrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.75fr repeat(5, 0.5fr) 0.4fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 40px;
+  }
+
+  .footerhead {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .legal {
+    grid-area: 3 / 1 / 5 / 2;
+  }
+
+  .contact {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+
+  .footp {
+    
+    grid-area: 6 / 1 / 7 / 4;
+  }
+
+  .contacticons {
+    grid-area: 7 / 1 / 8 / 2;
+  }
+
+  .googlePlay {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .appStore {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 75px;
+    grid-row-gap: 75px;
+  }
+
+  .build {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .community {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .voice {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .explore {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .lang {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .badge {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+
+  .resourcegrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 75px;
+    grid-row-gap: 75px;
+  }
+
+  .chatR {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .comm {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .bubleshot {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .publish {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .record {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .update {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+
 }
